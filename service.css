@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
+/* Main Section */
+main {
+  padding: 2rem;
+}
+
+.car-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+/*repeat(auto-fit, minmax(250px, 1fr))*/
+.car-card {
+  background-color: #e0e0e0;
+  box-shadow: 10px 10px 10px gray;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+}
+
+.car-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.car-card p {
+  margin-bottom: 0.5rem;
+}
+
+.car-card button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.car-card button:hover {
+  background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+i {
+  margin: 5px;
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .car-card button {
+    font-size: small;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  header nav a {
+    margin: 0 0.5rem;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+
+  .car-card {
+    padding: 0.5rem;
+  }
+
+  .car-card h3 {
+    font-size: 1rem;
+  }
+
+  .car-card button {
+    font-size: small;
+    padding: 0.3rem 0.6rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
